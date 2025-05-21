@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Çağrı Lift Paneli</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      height: 100vh;
+    }
+    .sidebar {
+      background-color: #333;
+      color: white;
+      width: 220px;
+      padding-top: 20px;
+      position: fixed;
+      height: 100%;
+    }
+    .sidebar h2 {
+      text-align: center;
+    }
+    .sidebar a {
+      display: block;
+      color: white;
+      padding: 15px;
+      text-decoration: none;
+    }
+    .sidebar a:hover {
+      background-color: #575757;
+    }
+    .content {
+      margin-left: 220px;
+      width: calc(100% - 220px);
+      height: 100%;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Menü</h2>
+    <a href="bakimlar.html" target="icerik">Bakımlar</a>
+    <a href="revizyon.html" target="icerik">Revizyonlar</a>
+    <a href="montaj.html" target="icerik">Montajlar</a>
+    <a href="ariza.html" target="icerik">Arızalar</a>
+  </div>
+  <div class="content">
+    <iframe name="icerik" src="bakimlar.html"></iframe>
+  </div>
+</body>
+</html>

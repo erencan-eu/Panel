@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Çağrı Lift Giriş</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            font-size: 3em;
+        }
+
+        input[type="password"],
+        button {
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 1em;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Çağrı Lift Giriş</h1>
+    <input type="password" id="password" placeholder="Şifre">
+    <button onclick="giris()">Giriş Yap</button>
+
+    <script>
+        function giris() {
+            var sifre = document.getElementById('password').value;
+            if (sifre === 'eren') {
+                window.location.href = 'panel.html';
+            } else {
+                alert('Hatalı şifre!');
+            }
+        }
+    </script>
+</body>
+</html>
